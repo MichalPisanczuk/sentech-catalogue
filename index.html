@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentech - Ignition sets catalogue</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay-layer">
+      <div class="loader"><img src="img/loading.gif" alt="Loading" /></div>
+    </div>
+    <div>
+      <input type="file" id="catalogueFile" accept=".xlsx, .xls" />
+      <button id="myBtn">Wgraj katalog</button>
+      <script src="app.js"></script>
+    </div>
+    <pre id="jsonData"></pre>
+  </body>
+</html>
