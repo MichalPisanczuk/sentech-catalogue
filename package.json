@@ -1,0 +1,23 @@
+{
+  "name": "sentech-catalogue",
+  "version": "1.0.0",
+  "description": "Sentech prduct catalogue",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalPisanczuk/sentech-catalogue.git"
+  },
+  "author": "Michal Pisanczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalPisanczuk/sentech-catalogue/issues"
+  },
+  "homepage": "https://github.com/MichalPisanczuk/sentech-catalogue#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "type": "module"
+}
