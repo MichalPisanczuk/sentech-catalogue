@@ -1,7 +1,7 @@
-import fs from "fs";
-
 let selectedFile = null;
 const overlayLayer = document.querySelector(".overlay-layer");
+
+// Zamiana pliku Excela na format JSON
 
 document.querySelector("#catalogueFile").addEventListener("change", (event) => {
   selectedFile = event.target.files[0];
@@ -20,6 +20,7 @@ document.querySelector("#myBtn").addEventListener("click", () => {
           let rowObject = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
           const pre = (document.querySelector("#jsonData").innerText = JSON.stringify(rowObject, undefined, 4));
           if (index === array.length - 1) resolve();
+          exportToJsonFile(pre);
         });
       });
       bar.then(() => {
@@ -29,3 +30,12 @@ document.querySelector("#myBtn").addEventListener("click", () => {
     };
   }
 });
+
+function exportToJsonFile(dataStr) {
+  let dataUri = "data:application/json;charset=utf-8," + encodeURIComponent(dataStr);
+  let exportFileDefaultName = "database.json";
+  let linkElement = document.createElement("a");
+  linkElement.setAttribute("href", dataUri);
+  linkElement.setAttribute("download", exportFileDefaultName);
+  linkElement.click();
+}
