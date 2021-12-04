@@ -1,7 +1,7 @@
 {
   "name": "sentech-catalogue",
   "version": "1.0.0",
-  "description": "Sentech prduct catalogue",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,11 +17,6 @@
   },
   "homepage": "https://github.com/MichalPisanczuk/sentech-catalogue#readme",
   "dependencies": {
-    "file-saver": "^2.0.5",
-    "fs": "0.0.1-security",
-    "ngx-filesaver": "^12.0.0"
-  },
-  "type": "module",
-  "devDependencies": {},
-  "keywords": []
+    "json-server": "^0.17.0"
+  }
 }
